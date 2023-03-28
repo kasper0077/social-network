@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+</head>
+<body>
+    <div>
+        Hillel:
+        <p></p>
+    </div>
+    <div>
+        {% block content %}{% endblock %}
+    </div>
+    <div>
+        {% block about %}
+
+        {% endblock%}
+    </div>
+
+</body>
+</html>

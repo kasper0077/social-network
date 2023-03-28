@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+
+<div class="registr">
+<form action=" " method="post">
+    {{ form.hidden_tag() }}
+    <ul>
+        <li type="text">
+        <h5 >{{ form.username.label }}:{{ form.username(size=32) }}</h5>
+        </li>
+        <li>
+        {{ form.email.label }}:{{ form.username(size=64) }}
+        </li>
+        <li>
+        {{ form.password.label }}:{{ form.password(size=32) }}
+        </li>
+    </ul>
+    {{ form.submit() }}
+</form>
+</div>
+{% endblock %}
